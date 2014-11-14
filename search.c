@@ -18,6 +18,8 @@ int main(int argc, char **argv) {
         andSearch(list, searchMe); //search 'list and' for search input
     }else if(searchMe[0] == 's' && searchMe[1] == 'o'){ //search or
         orSearch(list, searchMe);  //search 'list or' for search input
+    }else if (searchMe[0] == 'm'){
+
     }
   }
 
@@ -127,9 +129,6 @@ char** buildFiles(const char* indexFile){
   fclose(file);
   return fileList;
 }
-
-
-
 
 
 
